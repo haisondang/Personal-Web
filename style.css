@@ -1,0 +1,168 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0% 15%;
+  box-sizing: border-box;
+  background-image: url('background.jpg'); /* Replace 'background-image.jpg' with your actual image */
+  background-size: cover;
+  background-position: center;
+  color: white; /* Default text color */
+  padding: 0; /* Reset default body padding */
+  align-items: center;
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.main {
+  backdrop-filter: blur(10px);
+  width: 70%;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 15%;
+
+
+  
+}
+
+section {
+  backdrop-filter: blur(10px);
+  color: #fff;
+  
+}
+.formation li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.logo {
+  float: left;
+  margin-right: 30px; 
+  max-width: 150px;
+  max-height: 90px;
+}
+
+.logo-section {
+  display: flex;
+}
+
+/* Individual logo and text pair */
+.logo-container {
+  position: relative;
+  left: 0px;
+  width: 250px; /* Adjust width as needed */
+  height: 350px; /* Adjust height as needed */
+  background-color: #cdeccd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  overflow: hidden; /* Ensure content stays within card boundaries */
+  margin: 10px; /* Adjust margin as needed */
+  transition: transform 0.3s ease;
+}
+.logo-container p{
+  text-align: justify;
+  line-height: 1.5;
+  opacity: 0; /* Initially hide the content */
+  transition: opacity 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+.logo-container:not(:first-child){
+  margin-left: -50px;
+}
+.logo-container:hover {
+  transform: translateY(-20px);
+}
+.logo-container:hover p{
+  opacity: 1;
+}
+.logo-container:hover ~ .logo-container{
+  left:50px;
+  transition: transform 0.3s ease;
+}
+
+/* Logo styling */
+.logo_app {
+  max-width: 100px; /* Adjust maximum width */
+  max-height: 100px; /* Adjust maximum height */
+}
+
+/* Text styling */
+.logo-text {
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.container{
+  display: flex;
+}
+
+.card{
+  flex: 1;
+  text-align: center;
+  position: relative;
+  left: 0px;
+  width: 250px; /* Adjust width as needed */
+  height: 350px; /* Adjust height as needed */
+  background-color: #cdeccd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  overflow: hidden; /* Ensure content stays within card boundaries */
+  margin: 1.5px; /* Adjust margin as needed */
+  transition: transform 0.3s ease;
+}
+
+.card:hover{
+  flex:3;
+  transition: transform 0.5s ease;
+}
+
+.logo1{
+  display: inline-block;
+  max-width: 70px; /* Adjust maximum width */
+  max-height: 70px; /* Adjust maximum height */
+  margin: 0 50px; /* Adjust margin as needed */
+}
+
+
+h1, h2, h3, h4 {
+  color: #ADD8E6;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.navbar {
+  background-color: #333; /* Background color of the navbar */
+  overflow: hidden;
+}
+
+/* Style for the navigation links */
+.navbar a {
+  float: left; /* Float the links to the left */
+  display: block; /* Display as block-level elements */
+  color: white; /* Text color */
+  text-align: center; /* Center align the text */
+  padding: 14px 20px; /* Add padding */
+  text-decoration: none; /* Remove default underline */
+}
